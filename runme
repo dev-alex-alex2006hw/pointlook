@@ -1,0 +1,4 @@
+#react-native bundle --entry-file ./index.ios.js --platform ios --bundle-output ios/main.jsbundle
+#react-native bundle --entry-file ./index.android.js --platform android --bundle-output android/main.jsbundle
+#react-native run-nadroid
+react-native run-ios
