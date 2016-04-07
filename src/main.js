@@ -7,6 +7,7 @@ const height = Dimensions.get('window').height;
 
 // import Camera from './components/camera/CameraRollExample';
 import Camera from './components/camera/CameraRollGallery';
+// import Camera from './components/storage/asyncStorage';
 
 module.exports = React.createClass({
     render: function() {
