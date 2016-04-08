@@ -8,6 +8,8 @@
   "dependencies": {
     "minutes-seconds-milliseconds": "^1.0.3",
     "react": "^0.14.8",
-    "react-native": "^0.23.0"
+    "react-native": "^0.23.0",
+    "react-native-aws3": "0.0.1",
+    "react-native-device-monitor": "^1.0.0"
   }
 }

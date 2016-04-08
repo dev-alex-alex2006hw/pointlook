@@ -8,7 +8,6 @@ import React, {
   View,
   Text,
 } from 'react-native';
-// import CameraRoll from 'rn-camera-roll';
 
 const styles = {
   container: {

@@ -27,6 +27,7 @@ var {
   View,
 } = React;
 
+
 var groupByEveryN = require('groupByEveryN');
 var logError = require('logError');
 
@@ -72,24 +73,27 @@ var propTypes = {
 
 };
 
-var CameraRollView = React.createClass({
+module.exports = React.createClass({
   propTypes: propTypes,
 
   getDefaultProps: function(): Object {
     return {
-      groupTypes: 'SavedPhotos',
-      batchSize: 5,
-      imagesPerRow: 1,
-      assetType: 'Photos',
+      groupTypes: 'All',
+      batchSize: 12,
+      imagesPerRow: 3,
+      assetType: 'All',
       renderImage: function(asset) {
-        var imageSize = 150;
-        var imageStyle = [styles.image, {width: imageSize, height: imageSize}];
-        return (
+      var imageWidth = 75;
+      var imageHeight = 100;
+      var imageStyle = [styles.image, {width: imageWidth, height: imageHeight}];
+
+      return (
           <Image
             source={asset.node.image}
             style={imageStyle}
           />
         );
+
       },
     };
   },
@@ -256,5 +260,3 @@ var styles = StyleSheet.create({
     flex: 1,
   },
 });
-
-module.exports = CameraRollView;
