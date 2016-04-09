@@ -44,7 +44,7 @@
 //   jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
 #ifdef DEBUG
-     jsCodeLocation = [NSURL URLWithString:@"http://192.168.0.106:8081/index.ios.bundle"];
+     jsCodeLocation = [NSURL URLWithString:@"http://m.pointlook.com:8081/index.ios.bundle"];
 #else
         jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 #endif
