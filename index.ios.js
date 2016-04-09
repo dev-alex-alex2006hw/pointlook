@@ -157,7 +157,7 @@ class UploadFromCameraRoll extends React.Component {
       <View style={styles.container}>
 
         <Text style={ styles.title }>
-          PointLook
+          POINTLOOK iOS
         </Text>
 
         <Modal
